@@ -1,0 +1,27 @@
+Algoritmo pedir2númerosalusuarioysumarlosrestarlosmultiplicarlosydividirlos
+	Definir num1, num2, suma, resta, multi, divi Como Real
+	Definir respuesta, r1 Como Caracter
+	Repetir
+		Escribir "Introduce el primer número"
+		Leer num1
+		Escribir "Introduce el segundo número"
+		Leer num2
+		
+		suma = num1 + num2
+		resta = num1 - num2
+		multi = num1 * num2
+		
+		Escribir "La suma de los números ",num1, " y ",num2," es ",suma
+		Escribir "La resta de los números ",num1, " y ",num2," es ",resta
+		Escribir "La multiplicación de los números ",num1, " y ",num2," es ",multi
+		Si num2 = 0 Entonces
+			Escribir "No se puede hacer la división entre ceros"
+		SiNo
+			divi = num1 / num2
+			Escribir "La división de los números ",num1, " y ",num2," es ",divi
+		FinSi
+		
+		Escribir "¿Desea repetir el proceso? si/no"
+		Leer respuesta
+	Hasta Que respuesta <> "si"
+FinAlgoritmo

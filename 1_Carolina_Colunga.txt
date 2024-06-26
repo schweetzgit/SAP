@@ -1,0 +1,13 @@
+Algoritmo _1_Carolina_Colunga
+	Definir i Como Real
+	Escribir "¿Qué núemro sigue en la lista?"
+	Escribir "9, 13 17, 21, 25, 29, ?"
+	Escribir ""
+	
+	para i=9 hasta 29 con paso 4 hacer
+		Escribir i," + 4 = ",i+4
+	FinPara
+	
+	Escribir ""
+	Escribir "9, 13 17, 21, 25, 29, 33"
+FinAlgoritmo

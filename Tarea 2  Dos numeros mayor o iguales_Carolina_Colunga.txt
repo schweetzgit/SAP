@@ -1,0 +1,25 @@
+Algoritmo Introducir_dos_numeros_y_decir_cual_es_mayor_o_si_son_iguales
+	
+	Definir numero1,numero2 Como Real
+	
+	Escribir 'Introduce un primer número real'
+	Leer numero1 // se lee la primera variable
+	
+	Escribir 'Introduce el segundo número real'
+	
+	Leer numero2 // se lee la segunda variable
+	Si (numero1>=numero2) Entonces // si son iguales o el primero es mayor, entonces
+		Si (numero1=numero2) Entonces
+			// si son iguales
+			Escribir 'Los números introducidos:',numero1,' y ',numero2,' son iguales.'
+		SiNo
+			// si no son iguales (numero 1 sea mayor)
+			Escribir 'El primer número, ',numero1,', es mayor que el segundo, ',numero2,'.'
+		FinSi
+	SiNo
+		// Si el primero no es mayor o igual al segundo, entonces el segundo es el más grande
+		Escribir 'El segundo número, ',numero2,', es mayor que el primero, ',numero1,'.'
+	FinSi
+	
+FinAlgoritmo
+

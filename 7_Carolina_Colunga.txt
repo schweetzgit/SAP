@@ -1,0 +1,18 @@
+Algoritmo _7_Carolina_Colunga
+	Definir n, r, b Como Real
+	Escribir "Determinar que ecuación sigue en la lista"
+	Escribir "     34 x 34 = 1156"
+	Escribir "   334 x 334 = 111 556"
+	Escribir " 3334 x 3334 = 11 115 556"
+	Escribir "             ?           "
+	Escribir ""
+	
+	n = 4
+	r = (3 * ((10-10^(n+1))/(-9)))+4
+	b = r^2
+	
+	Escribir "      34 x 34 = 1156"
+	Escribir "    334 x 334 = 111 556"
+	Escribir "  3334 x 3334 = 11 115 556"
+	Escribir    r," x ",r, " = ",b 
+FinAlgoritmo

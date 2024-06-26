@@ -1,0 +1,56 @@
+Proceso Menu_calculadora
+	Definir n1, n2 Como Real
+	Definir n Como Entero
+	Repetir
+		limpiar pantalla
+		Repetir
+			Escribir Sin Saltar "Introduzca el primer numero  "
+			Leer n1
+			Escribir Sin Saltar "Introduzca el segundo numero  "
+			Leer n2
+			Si n2 = 0
+				Escribir "El segundo número debe ser diferente de cero"
+			FinSi
+		Hasta que n2 <> 0
+		Escribir " 1 - Suma "
+		Escribir " 2 - Resta "
+		Escribir " 3 - Multiplicación "
+		Escribir " 4 - División "
+		Escribir " 5 - Terminar "
+		Escribir sin saltar  "Seleccione una opción  "
+		Leer n
+		Segun n hacer
+			1: 	sum = n1+n2 
+				Escribir "La suma de ",n1," y ",n2," es ",sum
+				Escribir "Presione cualquier tecla para continuar "
+				Esperar tecla 
+			2:
+				res = n1 - n2
+				res2 = n2 - n1
+				Escribir "La resta de ",n1," y ",n2," es ",res
+				Escribir "La resta de ",n2," y ",n1," es ",res2
+				Escribir "Presione cualquier tecla para continuar "
+				Esperar tecla 
+			3: 
+				mul = n1 * n2
+				Escribir "La multiplicación de ",n1," y ",n2," es ",mul
+				Escribir "Presione cualquier tecla para continuar "
+				Esperar tecla  
+			4: 
+				div = nu1 / n2
+				Escribir "La división de ",n1," y ",n2," es ",div
+				Escribir "Presione cualquier tecla para continuar "
+				Esperar tecla 
+			5: 
+				
+			De otro modo:
+				Escribir "No existe esa opción. Intente nuevamente"
+		fin segun 
+		Escribir "¿Desea repetir el proceso? si/no"
+		Leer r
+	Hasta que r <> "si"	
+FinProceso
+
+
+
+

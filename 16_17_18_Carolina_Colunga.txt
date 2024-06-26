@@ -1,0 +1,79 @@
+Algoritmo _16_17_18_Carolina_Colunga
+	Definir n Como Entero
+	Repetir
+		Limpiar Pantalla
+		Repetir
+			Escribir "Selecciona una opción"
+			Escribir "1 - Árbol navideño sin tronco"
+			Escribir "2 - Árbol navideño con tronco"
+			Escribir "3 - Árbol navideño con cualquier carácter"
+			Escribir "4 - Árbol navideño; diseño propio"
+			Leer n
+		Hasta Que n > 0
+		
+		Segun n hacer
+			1:
+				Escribir "             *"
+				Escribir "            * *"
+				Escribir "           * * *"
+				Escribir "          * * * *"
+				Escribir "         * * * * *"
+				Escribir "        * * * * * *"
+				Escribir "       * * * * * * *"
+				Escribir "      * * * * * * * *"
+				Escribir "     * * * * * * * * *"
+				Escribir "    * * * * * * * * * *"
+			2:
+				Escribir "             *"
+				Escribir "            * *"
+				Escribir "           * * *"
+				Escribir "          * * * *"
+				Escribir "         * * * * *"
+				Escribir "        * * * * * *"
+				Escribir "       * * * * * * *"
+				Escribir "      * * * * * * * *"
+				Escribir "     * * * * * * * * *"
+				Escribir "    * * * * * * * * * *"
+				Escribir "           * * *"
+				Escribir "           * * *"
+				Escribir "           * * *"
+				Escribir "           * * *"
+			3:
+				Escribir "Introduzca el signo/carácter/número con el que quiere construir su árbol"
+				Leer s
+				Escribir "                      ",s
+				Escribir "                     ",s," ",s
+				Escribir "                    ",s," ",s," ",s
+				Escribir "                   ",s," ",s," ",s," ",s
+				Escribir "                  ",s," ",s," ",s," ",s," ",s
+				Escribir "                 ",s," ",s," ",s," ",s," ",s," ",s
+				Escribir "                ",s," ",s," ",s," ",s," ",s," ",s," ",s
+				Escribir "               ",s," ",s," ",s," ",s," ",s," ",s," ",s," ",S
+				Escribir "              ",s," ",s," ",s," ",s," ",s," ",s," ",s," ",s," ",s
+				Escribir "             ",s," ",s," ",s," ",s," ",s," ",s," ",s," ",s," ",s," ",s
+				Escribir "                    ",s," ",s," ",s
+				Escribir "                    ",s," ",s," ",s
+				Escribir "                    ",s," ",s," ",s
+				Escribir "                    ",s," ",s," ",s
+			4:
+				Escribir "             *"
+				Escribir "            / \"
+				Escribir "           /   \"
+				Escribir "          °     °"
+				Escribir "         /       \"
+				Escribir "        /         \"
+				Escribir "  \    / \_______/ \    /"
+				Escribir "   \  /             \  /"
+		         Escribir "     /               \"
+				Escribir "    / _ _ _     _ _ _ \"
+				Escribir "           |   |"
+				Escribir "           |   |"
+				Escribir "           |   |"
+				Escribir "           | _ |_"
+			De otro modo:
+				Escribir "No existe esa opción. Intente de nuevo"
+		FinSegun
+		Escribir "¿Desea repetir el proceso? si/no"
+		Leer r
+	Hasta Que r <> "si" 
+FinAlgoritmo

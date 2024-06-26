@@ -1,0 +1,50 @@
+Algoritmo _20_Carolina_Colunga
+	Definir s, bt, br, at, ar, lc, lcubo, areat, areac, arear, areacubo Como Real
+	Repetir
+		Limpiar Pantalla
+		Escribir " 1 - Área de un triángulo"
+		Escribir " 2 - Área de un rectángulo"
+		Escribir " 3 - Área de un cuadrado "
+		Escribir " 4 - Área de un cubo"
+		Escribir " 5 - Terminar"
+		Escribir sin saltar  "Seleccione una opción  "
+		Leer s
+		
+		Segun s Hacer
+			1: 
+				Escribir "Área de un triángulo"
+				Escribir "Ingresa la medida de la base en centimetros"
+				Leer bt
+				Escribir "Ingresa la medida de la altura en centimetros"
+				Leer at
+				areat = (bt * at)/2
+				Escribir "El área del triángulo es ",areat," cm2"
+			2:
+				Escribir "Área de un rectángulo"
+				Escribir "Ingresa la medida de la base en centimetros"
+				Leer br
+				Escribir "Ingresa la medida de la altura en centimetros"
+				Leer ar
+				arear = br * ar
+				Escribir "El área del rectángulo es ",arear," cm2"
+			3:
+				Escribir "Área de un cuadrado"
+				Escribir "Ingresa la medida de un lado en centimetros"
+				Leer lc
+				areac = lc * lc
+				Escribir "El área del cuadrado es ",areac," cm2"
+			4:
+				Escribir "Área de un cubo"
+				Escribir "Ingresa la medida de un lado"
+				Leer lcubo
+				areacubo = (lcubo * lcubo) * 6
+				Escribir "El área del cubo es ",areacubo," dm3"
+			5:
+			De Otro Modo:
+				Escribir "No existe esa opción. Intente nuevamente"
+		FinSegun
+		
+		Escribir "¿Desea repetir el proceso? si/no"
+		Leer r
+	Hasta Que r <> "si"
+FinAlgoritmo

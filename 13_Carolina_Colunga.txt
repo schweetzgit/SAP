@@ -1,0 +1,31 @@
+Proceso _13_Carolina_Colunga
+	Definir i,n,odn,f Como Entero
+	Definir r Como Caracter
+	Repetir
+		Limpiar Pantalla
+		Escribir "¿En qué número quiere empezar su serie?"
+		Leer i
+		Escribir "¿En qué número quiere finalizar su serie?"
+		Leer f
+		Escribir "¿Cada cuanto quiere que los números aparezacan?"
+		Leer n
+		Escribir "¿Cómo quiere que los números aparezcan?"
+		Escribir "1 - Descendente"
+		Escribir "2 - Ascendente"
+		Leer odn
+		Segun odn Hacer
+			1: 	Para i=i hasta f con paso -n Hacer
+					Escribir i
+				FinPara
+				
+			2: 	Para i=i hasta f con paso n Hacer
+					Escribir i
+				FinPara
+			De otro modo:
+				Escribir "No existe esa opción. Vuleva a intentar"
+		FinSegun
+		Escribir "¿Desea repetir el proceso? si/no"
+		Leer r
+	Hasta que r <> "si"
+FinProceso
+

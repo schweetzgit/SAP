@@ -1,0 +1,17 @@
+Algoritmo _14_Carolina_Colunga
+	Definir num, n Como Real
+	Repetir
+		Limpiar Pantalla
+		Escribir "Escribe un número y siempre te daré uno más grande"
+		Leer n
+		
+		num = n + 10
+		
+		Escribir "Tu número: ",n
+		Escribir "Número dado: ",num
+		Escribir "Te he ganado ",num," > ",n
+		Escribir "¿Desea repetir el proceso? si/no"
+		Leer r
+	Hasta Que r <> "si"
+FinAlgoritmo
+

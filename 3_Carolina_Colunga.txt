@@ -1,0 +1,12 @@
+Algoritmo _3_Carolina_Colunga
+	Definir a, i Como Real
+	Escribir "¿Qué núemro sigue en la lista"
+	Escribir "2, 4, 8, 16, 32, 64, ?"
+	
+	a = 2
+	Para i=1 hasta 7 con paso 1
+		n = a^7
+	FinPara
+	
+	Escribir "2, 4, 8, 16, 32, 64, ",n
+FinAlgoritmo

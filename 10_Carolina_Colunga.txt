@@ -1,0 +1,42 @@
+Algoritmo _10_Carolina_Colunga
+	Definir n1, n2 Como Real
+	Definir n Como Entero
+	Repetir
+		Limpiar pantalla
+		Repetir
+			Escribir Sin Saltar "Introduzca el primer numero  "
+			Leer n1
+			Escribir Sin Saltar "Introduzca el segundo numero  "
+			Leer n2
+			Si n2 = 0
+				Escribir "El segundo número debe ser diferente de cero"
+			FinSi
+		Hasta que n2 <> 0
+		Escribir " 1 - Suma"
+		Escribir " 2 - Resta"
+		Escribir " 3 - Multiplicación"
+		Escribir " 4 - División"
+		Escribir " 5 - Terminar"
+		Escribir sin saltar  "Seleccione una opción  "
+		Leer n
+		Segun n hacer
+			1: 	sum = n1+n2 
+				Escribir "La suma de ",n1," y ",n2," es ",sum
+			2:
+				res = n1 - n2
+				Escribir "La resta de ",n1," y ",n2," es ",res
+			3: 
+				mul = n1 * n2
+				Escribir "La multiplicación de ",n1," y ",n2," es ",mul
+			4: 
+				div = nu1 / n2
+				Escribir "La división de ",n1," y ",n2," es ",div
+			5: 
+			De otro modo:
+				Escribir "No existe esa opción. Intente nuevamente"
+		fin segun 
+		
+		Escribir "¿Desea repetir el proceso? si/no"
+		Leer r
+	Hasta que r <> "si"	
+FinAlgoritmo

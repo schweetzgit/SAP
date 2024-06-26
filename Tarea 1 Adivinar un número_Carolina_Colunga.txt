@@ -1,0 +1,27 @@
+Algoritmo Adivina_Numero
+	
+	intentos<-13
+	definir num_secreto Como Entero
+	num_secreto <- azar(200)   //numeros enteros
+	
+	Escribir "Adivine el numero (de 1 a 200, enteros):"
+	Leer num_ingresado // leer el numero del usuario
+	
+	Mientras num_secreto<>num_ingresado & intentos>1 Hacer  //>0 porque solo se podra una vez, si se pone >=1 dira "le quedan 0 intentos"
+		Si num_secreto>num_ingresado Entonces  //para que el usuario siga intriduciendo numeros hasta que adivine o escriba el elegido al azar
+			Escribir "Muy bajo"
+		SiNo 
+			Escribir "Muy alto"
+		FinSi
+		
+		intentos <- intentos-1 //Intentos restantes, hasta que ya no queden y lo adivine o se acaben
+		Leer num_ingresado //siga introduciendo numeros
+	FinMientras
+	
+	Si num_secreto=num_ingresado Entonces  //if
+		Escribir "¡Correcto! Adivino en ",14-intentos," intentos." //Uno más que los intentos porque se resta el primero
+	SiNo // if else
+		Escribir "El numero era: ",num_secreto
+	FinSi
+	
+FinAlgoritmo

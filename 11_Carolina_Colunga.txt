@@ -1,0 +1,21 @@
+Algoritmo _11_Carolina_Colunga
+	Definir n,f Como Real
+	Repetir
+		Limpiar Pantalla
+		Escribir "Escribe un número"
+		Leer n
+		f = 1
+		
+		Si n > 0 Entonces
+			Para i=1 hasta n Con Paso 1 Entoncces
+				f = f*i
+			FinPara
+			Escribir "El factorial de ", n ," es ",f
+		SiNo
+			Escribir "No existe factorial"
+		FinSi
+	
+		Escribir "¿Desea Repetir el proceso? (si/no)"
+		Leer r
+	Hasta Que r <> "si"
+FinAlgoritmo

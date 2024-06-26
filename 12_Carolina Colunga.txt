@@ -1,0 +1,20 @@
+Algoritmo _12_Carolina_Colunga
+	Definir n, i, sum, prom, num Como Real
+	Repetir
+		Limpiar Pantalla
+		Escribir "¿Cuántos números quieres promediar?"
+		Leer n 
+		
+		Para i=1 hasta n con paso 1
+			Escribir "Número ",i
+			leer num
+			sum = sum + num
+		FinPara
+		
+		prom = sum /n
+		
+		Escribir "El promedio es : ",prom
+		Escribir "¿Desea repetir el proceso? si/no"
+		Leer r
+	hasta que r <> "si"
+FinAlgoritmo

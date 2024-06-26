@@ -1,0 +1,40 @@
+Algoritmo _21_Carolina_Colunga
+	Definir n, a Como Entero
+	Repetir
+		Escribir "Escriba un numero entero en decimal"
+		leer n
+		a = n
+		Repetir
+			Si a%16 > 9 Y a%16 < 16 Entonces
+				Si a%16 = 10 Entonces
+					i = "A" + i
+				finsi
+				Si a%16 = 11 Entonces
+					i = "B" + i
+				finsi
+				Si a%16 = 12 Entonces
+					i = "C" + i
+				finsi
+				Si a%16 = 13 Entonces
+					i = "D" + i
+				finsi
+				Si a%16 = 14 Entonces
+					i = "E" + i
+				finsi
+				Si a%16 = 15 Entonces
+					i = "F" + i
+				finsi
+			Sino
+				i =ConvertirATexto(a%16) + i
+			Fin Si
+			a = trunc(a/16)
+		Hasta Que a <= 1
+		Si a > 0 Entonces
+			i = ConvertirATexto(a) + i
+		Fin Si
+		
+		Escribir "Número en hexadecimal: ",i
+		Escribir "¿Desea repetir el proceso? si/no"
+		Leer r
+	Hasta Que r <> "si"
+FinAlgoritmo

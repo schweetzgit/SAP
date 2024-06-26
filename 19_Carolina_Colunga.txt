@@ -1,0 +1,45 @@
+Algoritmo _19_Carolina_Colunga
+	Definir num1, num2, num3 Como Real
+	Repetir
+		Limpiar Pantalla
+		Escribir "Introduce el primer número" 
+		Leer num1 
+		Escribir "Introduce el segundo número"
+		Leer num2 
+		Escribir "Introduce el tercer número" 
+		Leer num3
+		
+		Si num1 > num2 Entonces
+			Si num1 > num3 Entonces
+				Escribir "El primer número, ",num1,", es el mayor"
+			FinSi
+		FinSi
+		Si num2 > num3 Entonces
+			Si num2 > num1 Entonces
+				Escribir "El segundo número, ",num2,", es el mayor"
+			FinSi
+		FinSi
+		Si num3 > num1 Entonces
+			Si num3 > num2 Entonces
+				Escribir "El tercer número, ",num3,", es el mayor"
+			FinSi
+		FinSi
+		
+		Si num1 = num2 Entonces
+			Si num1 = num3 Entonces
+				Escribir "El primer número, ",num1,", el segundo, ",num2," y el tercero, ",num3,", son iguales"
+			FinSi
+		FinSi
+		Si num1 = num2 Entonces
+			Escribir "El primer número, ",num1," y el segundo, ",num2,", son iguales"
+		FinSi
+		Si num1 = num3 Entonces
+			Escribir "El primer número, ",num1," y el tercero, ",num3,", son iguales"
+		FinSi
+		Si num2 = num3 Entonces
+			Escribir "El segundo número, ",num2," y el tercero, ",num3,", son iguales"
+		FinSi
+		Escribir "¿Desea repetir el proceso? si/no"
+		Leer r
+	Hasta Que r <> "si"
+FinAlgoritmo

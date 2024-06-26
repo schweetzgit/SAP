@@ -1,0 +1,20 @@
+Algoritmo _25_Carolina_Colunga
+	Definir n, i, moda, num Como Real
+	Dimension datos[100]
+	Repetir
+		Limpiar Pantalla
+		Escribir "Ingrese la cantidad de datos (de 2 a 100):"
+		Leer n
+		Para i<-1 Hasta n Hacer
+			Escribir "Ingrese el dato ",i,":"
+			Leer datos[i]
+		FinPara
+		Si datos[1]=datos[2] Entonces
+			m<-datos[1]
+			m2=datos[2]
+		FinSi
+		Escribir "La moda es: ",m2
+		Escribir "¿Desea repetir el proceso? si/no"
+		Leer r
+	Hasta Que r <> "si"
+FinAlgoritmo

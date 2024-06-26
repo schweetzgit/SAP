@@ -1,0 +1,22 @@
+Algoritmo _9_Carolina_Colunga
+	Repetir
+		Dimensión Bn[5]
+		Escribir "Escribe un número en binario de 5 valores (bits)"
+		
+		Leer Bn[1] 
+		Bn[1] = Bn[1]*16
+		Leer Bn[2] 
+		Bn[2] = Bn[2]*8
+		Leer Bn[3] 
+		Bn[3] = Bn[3]*4
+		Leer Bn[4] 
+		Bn[4] = Bn[4]*2
+		Leer Bn[5] 
+		Bn[5] = Bn[5]*1
+		
+		Escribir "Número en decimal: ",Bn[1]+Bn[2]+Bn[3]+Bn[4]+Bn[5]   
+		
+		Escribir "¿Desea repetir el proceso? si/no"
+		Leer r
+	Hasta Que r <> "si"
+FinAlgoritmo

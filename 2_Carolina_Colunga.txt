@@ -1,0 +1,12 @@
+Algoritmo _2_Carolina_Colunga
+	Definir n, a, b, c Como Real
+	Escribir "¿Qué núemro sigue en la lista"
+	Escribir "1, 1, 2, 3, 5, 8, 13, 21, ?"
+	
+	n = 9
+	a = ((1+rc(5))/(2))
+	b = ((1-rc(5))/(2))
+	c = (((a)^n)-((b)^n))/rc(5)
+	
+	Escribir "1, 1, 2, 3, 5, 8, 13, 21, ",c
+FinAlgoritmo

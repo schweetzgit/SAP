@@ -1,0 +1,20 @@
+Algoritmo Realizar_el_promedio_de_tres_números
+	Definir n1, n2, n33, suma, promedio como real //se definen las variables como reales para que solo se lean números
+	
+	Escribir "Ingresar un primer número" // Mensaje al usuario para indicarle que ingrese un primer número
+	Leer n1 // Se lee el primer número y se guarda en la variable n1
+	Escribir "Ingresar un segundo número"// Mensaje al usuario para indicarle que ingrese un segundo número
+	Leer n2 // Se lee el segundo número y se guarda en la variable n2
+	Escribir "Ingresar un tercer número"// Mensaje al usuario para indicarle que ingrese un tercer número
+	Leer n3 // Se lee el tercer número y se guarda en la variable n3
+	
+	
+	suma = (n1+n2+n3) //Se realiza la suma de los números ingresados y se guarda en la variable suma
+	promedio = (suma)/3 //Para sacar el promedio se divide el resultado de la suma entres los elementos sumados (3, en este caso)
+	// y se guarda en la variable promedio
+	
+	Escribir "El promdeio de, ",n1,", ",n2,", ",n3,", es ",promedio
+	// Se muestra el último mensaje al usuario usando concatenación para escribir los datos anteriores, los tres números introducidos
+	// y el promedio
+
+FinAlgoritmo

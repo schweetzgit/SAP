@@ -1,0 +1,15 @@
+Algoritmo Sumar_3_números
+	Definir a, b, c, suma como real //se definen las variables como reales para que solo se lean números
+	
+	Escribir "Escribe el primer número" // Mensaje al usuario para indicarle que escriba un primer número
+	Leer a // Se lee el primer número y se guarda en la variable a
+	Escribir "Escribe el segundo número"// Mensaje al usuario para indicarle que escriba un segundo número
+	Leer b // Se lee el segundo número y se guarda en la variable b
+	Escribir "Escribe el tercer número"// Mensaje al usuario para indicarle que escriba un tercer número
+	Leer c // Se lee el tercer número y se guarda en la variable c
+	
+	suma = (a+b+c) //Se hace la suma de los números guardados en las variables anteriores y se guarda el resultado en la variable suma
+	
+	Escribir "La suma de los números,",a,",",b,",",c,", es ",suma //Se escribe un último mensaje al usuario para indicarle cual es la suma
+	// Se hace haciendo concatenación de los datos anteriores
+FinAlgoritmo

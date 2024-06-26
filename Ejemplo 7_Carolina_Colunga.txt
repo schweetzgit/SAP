@@ -1,0 +1,11 @@
+Algoritmo Ejemplo7
+	Escribir "Descubre que multiplicación y que producto sigue en la lista"
+	para i=3 hasta 15 con paso 3 Hacer
+		Escribir "37 x ",i," = ",37*i
+	FinPara
+	Escribir " "
+	
+	para i=3 hasta 15 con paso 3 Hacer
+		Escribir i," + 3 = ",3+i
+	FinPara
+FinAlgoritmo

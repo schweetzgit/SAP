@@ -1,0 +1,62 @@
+Algoritmo _15_Carolina_Colunga
+	Definir i, n, sum, num, div, res Como Real
+	Repetir
+		Limpiar pantalla
+		Escribir " 1 - Suma"
+		Escribir " 2 - Resta"
+		Escribir " 3 - Multiplicación"
+		Escribir " 4 - División"
+		Escribir " 5 - Terminar"
+		Escribir sin saltar  "Seleccione una opción  "
+		Leer s
+		Escribir Sin Saltar "¿Cuántos números quiere usar?  "
+		Leer n
+		Segun s hacer
+			1: 
+				Para i = 1 hasta n Hacer
+					Mientras i<=n Hacer
+						Escribir "Ingresa un número"
+						Leer num
+						suma = suma + num
+						i = i + 1
+					FinMientras
+				FinPara
+				Escribir "La suma de los números es ",suma
+			2:
+				Para i = 1 hasta n Hacer
+					Mientras i<=n Hacer
+						Escribir "Ingresa un número"
+						Leer num
+						res = res - num
+						i = i + 1
+					FinMientras
+				FinPara
+				Escribir "La resta de los núemros es ",res
+			3: 
+				mul = 1
+				Para i = 1 hasta n Hacer
+					Escribir "Ingresa un número"
+					Leer num
+					mul = mul * num
+				FinPara
+				Escribir "La multiplicación de los números es ",mul
+			4:
+				Para i = 1 hasta n Hacer
+					Mientras i<=n Hacer
+						Escribir "Ingresa un número"
+						Leer num
+						suma = suma + num
+						i = i + 1
+					FinMientras
+					div = suma/n
+				FinPara
+				Escribir "La división de los números sumados y divididos es ",div
+			5: 
+			De otro modo:
+				Escribir "No existe esa opción. Intente nuevamente"
+		fin segun 
+		
+		Escribir "¿Desea repetir el proceso? si/no"
+		Leer r
+	Hasta que r <> "si"	
+FinAlgoritmo

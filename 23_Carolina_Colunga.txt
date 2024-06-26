@@ -1,0 +1,24 @@
+Algoritmo _23_Carolina_Colunga
+	Repetir
+		Limpiar Pantalla
+		Escribir "Introduce el inicio de un rango de números"
+		Leer in
+		Escribir "Introduce el fin del rango de números"
+		Leer fn
+		
+		Escribir "Los pares son: "
+		Para i=in hasta fn Con Paso 1 Entonces
+			Si i%2=0 Entonces
+				Escribir i
+			FinSi
+		FinPara
+		Escribir "Los impares son: "
+		Para i=in hasta fn Con Paso 1 Entonces
+			Si i%2<>0 Entonces
+				Escribir i
+			FinSi
+		FinPara
+		Escribir "¿Desea repetir el proceso? si/no"
+		Leer r
+	Hasta Que r <> "si"
+FinAlgoritmo

@@ -1,0 +1,8 @@
+Algoritmo Ejercicio2 
+	Escribir "Determinar que número sigue en la lista"
+	Escribir "1, 4, 9, 16, 25, 36, ?"
+	Para i=1 hasta 7 con paso 1 hacer
+		a = i^2
+	FinPara
+	Escribir "1, 4, 9, 16, 25, 36, ",a
+FinAlgoritmo

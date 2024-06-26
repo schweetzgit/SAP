@@ -1,0 +1,20 @@
+Algoritmo _22_Carolina_Colunga
+	Definir in, fn, i Como Real
+	Repetir
+		Limpiar Pantalla
+		Escribir "Introduce el inicio de un rango de números"
+		Leer in
+		Escribir "Introduce el fin del rango de números"
+		Leer fn
+		
+		Para i = in hasta fn con paso 1
+			Escribir i
+		FinPara
+		Para i = fn hasta in con paso 1
+			Escribir i
+		FinPara
+		
+		Escribir "¿Desea repetir el proceso? si/no"
+		Leer r
+	Hasta Que r <> "si"
+FinAlgoritmo

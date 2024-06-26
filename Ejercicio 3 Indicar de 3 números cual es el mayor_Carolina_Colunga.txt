@@ -1,0 +1,41 @@
+Algoritmo Indicar_de_3_números_cual_es_el_mayor
+	Definir num1, num2, num3, suma como real //se definen las variables como reales para que solo se lean números
+	
+	Escribir "Introduce el primer número" // Mensaje al usuario para indicarle que introduzca el primer número
+	Leer num1 // Se lee el primer número y se guarda en la variable num1
+	Escribir "Introduce el segundo número"// Mensaje al usuario para indicarle que introduzca el segundo número
+	Leer num2 // Se lee el segundo número y se guarda en la variable num2
+	Escribir "Introduce el tercer número"// Mensaje al usuario para indicarle que introduzca el tercer número
+	Leer num3 // Se lee el tercer número y se guarda en la variable num3
+	
+	//Se hace el proceso de comparar primero un número con otro
+	// Si no se cumple se pasa a la siguiente condición hasta encontrar una que se cumpla
+	// Si se cumple la condición, se pasa a comparar con el número que falta, y si se cumple entonces sale el mensaje final
+	// Nota: No se escribe un SiNo en la segunda condición, si se pone el SiNo saldría un doble mensaje
+	
+	Mientras num1 <> num2 Y num2 <> num3 Y num1 <> num3 //Verificar que los números sean diferentes
+		Si num1 > num2 Entonces //Se compara num1 y num2, si num1 es mayor que num2 se para a la siguiente condición
+			Si num1 > num3 Entonces //Si num1 es mayor que num3, entonces es el mayor de los tres
+				Escribir "El primer número, ",num1, ", es el mayor de los tres" //Mensaje final al usuario
+			FinSi
+		FinSi
+		
+		Si num2 > num3 Entonces //Se compara num2 y num3, si num2 es mayor que num3 se para a la siguiente condición
+			Si num2 > num1 Entonces //Si num2 es mayor que num1, entonces es el mayor de los tres
+				Escribir "El segundo número, ",num2 ", es el mayor de los tres" //Mensaje final al usuario
+			FinSi
+		FinSi
+		
+		Si num3 > num1 Entonces //Se compara num3 y num1, si num3 es mayor que num1 se para a la siguiente condición
+			Si num3 > num2 Entonces //Si num3 es mayor que num2, entonces es el mayor de los tres
+				Escribir "El tercer número, ",num3, ", es el mayor de los tres" //Mensaje final al usuario
+			FinSi
+		FinSi
+	FinMientras
+	
+	// Si los números son iguales 
+	Mientras num1 == num2 Y num2 == num3 Y num1 == num3 // Verificar que los números sean iguales
+		Escribir "Alguno de los números son iguales" //Mensaje final
+	FinMientras
+	
+FinAlgoritmo

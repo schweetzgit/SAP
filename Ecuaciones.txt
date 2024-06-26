@@ -1,0 +1,220 @@
+#include<stdio.h>
+#include<math.h>
+#define MAX_STRLEN 256
+
+int main() {
+	float a;
+	float a1;
+	float b;
+	float b1;
+	float c1;
+	float d;
+	float d1;
+	float g;
+	float i;
+	float i1;
+	float i12;
+	float i34;
+	float i56;
+	float i6;
+	float k1;
+	float p;
+	float p1;
+	float q;
+	float q1;
+	float r12;
+	float r34;
+	float r4;
+	float r5;
+	float r56;
+	float re;
+	float re1;
+	float re12;
+	float re34;
+	float re56;
+	float re6;
+	float t1;
+	float t12;
+	char tyu[MAX_STRLEN];
+	float u;
+	float u1;
+	float u2;
+	float u5;
+	float u6;
+	float u7;
+	float w;
+	float w1;
+	float w2;
+	float x1;
+	float x12;
+	float x13;
+	float x2;
+	float x3;
+	float x34;
+	float x35;
+	float x5;
+	float x56;
+	float x57;
+	float x6;
+	float x7;
+	float x8;
+	do {
+		printf("Version BETA\n");
+		printf("Calculadora de raices de polinomios de grado 3 hasta grado 1\n");
+		printf("Ingrese el grado de su polinomio\n");
+		scanf("%f",&g);
+		if (g==1) {
+			printf("Su ecuacion es de la forma ax+b=0\n");
+			printf("Ingrese coeficiente lineal\n");
+			scanf("%f",&a);
+			printf("Ingrese coeficiente independiente\n");
+			scanf("%f",&b);
+			/* Calcular raiz */
+			x1 = -b/a;
+			printf("La raiz unica es:\n");
+			printf("x=%f\n",x1);
+		} else {
+			if (g==2) {
+				printf("Su ecuacion es de la forma ax^2+bx+c=0\n");
+				printf("Ingrse coeficiente cuadratico\n");
+				scanf("%f",&w);
+				printf("Ingrese coeficiente lineal\n");
+				scanf("%f",&w1);
+				printf("Ingrese coeficiente independiente\n");
+				scanf("%f",&w2);
+				/* Calcular raices */
+				d = pow(w1,2)-4*w*w2;
+				if (d<0) {
+					re = -w1/(2*w);
+					i = sqrtf(-d)/(2*w);
+					printf("Sus unicas 2 raices son\n");
+					printf("x1=%f + %fi\n",re,i);
+					printf("x2=%f - %fi\n",re,i);
+				} else {
+					printf("Sus unicas 2 raices son\n");
+					x2 = (-w1+sqrtf(d))/(2*w);
+					x3 = (-w1-sqrtf(d))/(2*w);
+					printf("x1= %f\n",x2);
+					printf("x2= %f\n",x3);
+				}
+			} else {
+				if (g==3) {
+					printf("Su ecuacion es de la forma ax^3+bx^2+cx+d=0\n");
+					printf("Ingrese coeficiente cubico\n");
+					scanf("%f",&a1);
+					printf("Ingrse coeficiente cuadratico\n");
+					scanf("%f",&b1);
+					printf("Ingrese coeficiente lineal\n");
+					scanf("%f",&c1);
+					printf("Ingrese coeficiente independiente\n");
+					scanf("%f",&d1);
+					p = (3*a1*c1-pow(b1,2))/(3*pow(a1,2));
+					q = (2*pow(b1,3)-9*a1*b1*c1+27*pow(a1,2)*d1)/(27*pow(a1,3));
+					t1 = (q/(-2));
+					u1 = -pow(p,3)/27-pow(t1,2);
+					if (u1<=0) {
+						k1 = -u1;
+						if (t1-sqrtf(k1)<0) {
+							if (t1+sqrtf(k1)<0) {
+								u5 = -pow((-t1-sqrtf(k1)),(1/3))-pow((-t1+sqrtf(k1)),(1/3));
+								r4 = pow(u5,2)-4*(pow(u5,2)+p);
+								if (r4<0) {
+									re1 = -u5/2;
+									i1 = sqrtf(-r4)/2;
+									printf("Sus unicas 3 raices son\n");
+									printf("x1=%f\n",u5-b1/(3*a1));
+									printf("x1=%f + %fi\n",re1-b1/(3*a1),i1);
+									printf("x2=%f - %fi\n",re1-b1/(3*a1),i1);
+								} else {
+									printf("Sus unicas 3 raices son\n");
+									printf("x1=%f\n",u5-b1/(3*a1));
+									x5 = (-u5+sqrtf(r4))/2;
+									x6 = (-u5-sqrtf(r4))/2;
+									printf("x1= %f\n",x5-b1/(3*a1));
+									printf("x2= %f\n",x6-b1/(3*a1));
+								}
+							} else {
+								u6 = pow((t1+sqrtf(k1)),(1/3))-pow((-t1+sqrtf(k1)),(1/3));
+								r5 = pow(u6,2)-4*(pow(u6,2)+p);
+								if (r5<0) {
+									re6 = -u6/2;
+									i6 = sqrtf(-r5)/2;
+									printf("Sus unicas 3 raices son\n");
+									printf("x1=%f\n",u6-b1/(3*a1));
+									printf("x1=%f + %fi\n",re6-b1/(3*a1),i6);
+									printf("x2=%f - %fi\n",re6-b1/(3*a1),i6);
+								} else {
+									printf("Sus unicas 3 raices son\n");
+									printf("x1=%f\n",u6-b1/(3*a1));
+									x7 = (-u6+sqrtf(r5))/2;
+									x8 = (-u6-sqrtf(r5))/2;
+									printf("x1= %f\n",x8-b1/3*a1);
+									printf("x2= %f\n",x7-b1/3*a1);
+								}
+							}
+						} else {
+							if (t1+sqrtf(k1)<0) {
+								u7 = -pow((-t1-sqrtf(k1)),(1/3))+pow((t1-sqrtf(k1)),(1/3));
+								r34 = pow(u7,2)-4*(pow(u7,2)+p);
+								if (r34<0) {
+									re34 = -u/2;
+									i34 = sqrtf(-r34)/2;
+									printf("Sus unicas 3 raices son\n");
+									printf("x1=%f\n",u7-b1/(3*a1));
+									printf("x2=%f + %fi\n",re34-b1/(3*a1),i34);
+									printf("x3=%f - %fi\n",re34-b1/(3*a1),i34);
+								} else {
+									printf("Sus unicas 3 raices son\n");
+									printf("x1=%f\n",u7-b1/(3*a1));
+									x34 = (-u7+sqrtf(r34))/2;
+									x35 = (-u7-sqrtf(r34))/2;
+									printf("x2= %f\n",x34-b1/(3*a1));
+									printf("x3= %f\n",x35-b1/(3*a1));
+								}
+							} else {
+								u2 = pow((t1+sqrtf(k1)),(1/3))+pow((t1-sqrtf(k1)),(1/3));
+								r12 = pow(u2,2)-4*(pow(u2,2)+p);
+								if (r12<0) {
+									re12 = -u2/2;
+									i12 = sqrtf(-r12)/2;
+									printf("Sus unicas 3 raices son\n");
+									printf("x1=%f\n",(u2-b1/3*a1));
+									printf("x1=%f + %fi\n",re12-b1/3*a1,i12);
+									printf("x2=%f - %fi\n",re12-b1/3*a1,i12);
+								} else {
+									printf("Sus unicas 3 raices son\n");
+									printf("x1=%f\n",(u2-b1/3*a1));
+									x12 = (-u2+sqrtf(r12))/2;
+									x13 = (-u2-sqrtf(r12))/2;
+									printf("x2= %f\n",x12-b1/3*a1);
+									printf("x3= %f\n",x13-b1/3*a1);
+								}
+							}
+						}
+					} else {
+						q1 = 2*((pow(((pow(t1,2)+u1)),(1/6)))*cos(atan(sqrtf(u1)/t1)/3));
+						r56 = pow(q1,2)-4*(pow(q1,2)+p);
+						if (r56<0) {
+							re56 = -q1/2;
+							i56 = sqrtf(-r56)/2;
+							printf("Sus unicas 3 raices son\n");
+							printf("x1=%f\n",q1-b1/3*a1);
+							printf("x1=%f + %fi\n",re56-b1/3*a1,i56);
+							printf("x2=%f - %fi\n",re56-b1/3*a1,i56);
+						} else {
+							printf("Sus unicas 3 raices son\n");
+							printf("x1=%f\n",q1-b1/3*a1);
+							x56 = (-u+sqrtf(r56))/2;
+							x57 = (-u-sqrtf(r56))/2;
+							printf("x1= %f\n",x56-b1/3*a1);
+							printf("x2= %f\n",x57-b1/3*a1);
+						}
+					}
+				}
+			}
+		}
+		printf("si desea calcular las raices de esta ecuacion ingrese si, si ya no quiere ingrese n\n");
+		scanf("%s",tyu);
+	} while (tyu!=("n"));
+	return 0;
+}

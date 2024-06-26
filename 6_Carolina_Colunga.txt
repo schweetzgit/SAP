@@ -1,0 +1,12 @@
+Algoritmo _6_Carolina_Colunga
+	Definir i, n, a Como Real
+	Escribir "¿Qué núemro sigue en la lista"
+	Escribir "1, 2, 4, 8, 16, ?"
+	
+	a = 2
+	Para i=1 hasta 6 con paso 1
+		n = a^5
+	FinPara
+	
+	Escribir "1, 2, 4, 8, 16, ",n
+FinAlgoritmo

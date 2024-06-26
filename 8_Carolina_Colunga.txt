@@ -1,0 +1,17 @@
+Algoritmo _8_Carolina_Colunga
+	Definir i, n, f Como Real
+	Repetir
+		Limpiar Pantalla
+		Escribir "¿De qué número desea calcular la tabla?"
+		Leer n
+		Escribir "¿Hasta que número desea calcular la tabla?"
+		Leer f 
+		
+		Para i = 0 hasta f Con Paso 1 Entonces
+			Escribir " ",i, " * ",n " = ",(n*i)
+		FinPara
+		
+		Escribir "¿Desea repetir el proceso? si/no"
+		Leer r
+	Hasta Que r <> "si"
+FinAlgoritmo

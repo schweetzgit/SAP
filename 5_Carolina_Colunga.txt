@@ -1,0 +1,13 @@
+Algoritmo _5_Carolina_Colunga
+	Definir i Como Entero
+	Escribir "¿Qué núemro sigue en la lista?"
+	Escribir "100, 97, 94, 91, 88, ?"
+	Escribir ""
+
+	para i=100 hasta 85 con paso -3
+		Escribir i
+	FinPara
+	
+	Escribir ""
+	Escribir "100, 97, 94, 91, 88, 85"
+FinAlgoritmo
